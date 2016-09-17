@@ -1,0 +1,1 @@
+OBJ = fff.o 

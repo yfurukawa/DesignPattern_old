@@ -1,0 +1,1 @@
+TEST_SRC = ../test/testMain.cpp ../test/IContextTest.cpp ../test/NetworkConnectionTest.cpp ../test/ClientTest.cpp ../test/NetworkStateTest.cpp ../test/InitialTest.cpp ../test/EstablishedTest.cpp ../test/TimeoutTest.cpp 
