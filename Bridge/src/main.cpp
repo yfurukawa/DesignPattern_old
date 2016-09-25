@@ -1,4 +1,7 @@
+#include "BridgeClient.h"
+
 int main(int argc, char* argv[]) {
-    return 0;
+	Client client;
+	return 0;
 }
 
