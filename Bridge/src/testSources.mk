@@ -1,0 +1,1 @@
+TEST_SRC = ../test/testMain.cpp ../test/ClientTest.cpp ../test/ShapeTest.cpp ../test/CircleTest.cpp ../test/TriangleTest.cpp ../test/RectangleTest.cpp ../test/PaintTest.cpp ../test/DrawPaintTest.cpp ../test/FillPaintTest.cpp 
