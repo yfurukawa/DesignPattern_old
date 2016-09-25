@@ -1,7 +1,8 @@
 #include "BridgeClient.h"
 
 int main(int argc, char* argv[]) {
-	Client client;
+	BridgeClient client;
+	client.run();
 	return 0;
 }
 

@@ -9,3 +9,8 @@ Circle::Circle() {
 
 Circle::~Circle() {
 }
+
+void Circle::draw()
+{
+	this->paintEllipse("From Circle.");
+}

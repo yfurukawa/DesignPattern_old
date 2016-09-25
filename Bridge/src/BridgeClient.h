@@ -6,6 +6,9 @@
 
 #ifndef BRIDGECLIENT_H_
 #define BRIDGECLIENT_H_
+#include <list>
+
+class Shape;
 
 class BridgeClient {
  public:
@@ -17,6 +20,7 @@ class BridgeClient {
 
  protected:
  private:
+  std::list<Shape*> shape;
 };
 
 #endif  // BRIDGECLIENT_H_

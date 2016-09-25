@@ -6,13 +6,15 @@
 
 #ifndef RECTANGLE_H_
 #define RECTANGLE_H_
+#include "Shape.h"
 
-class Rectangle {
+class Rectangle : public Shape {
  public:
   //! Constractor
   Rectangle();
   //! Destructor
   virtual ~Rectangle();
+  virtual void draw();
 
  protected:
  private:

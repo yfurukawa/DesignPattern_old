@@ -6,13 +6,15 @@
 
 #ifndef TRIANGLE_H_
 #define TRIANGLE_H_
+#include "Shape.h"
 
-class Triangle {
+class Triangle : public Shape {
  public:
   //! Constractor
   Triangle();
   //! Destructor
   virtual ~Triangle();
+  virtual void draw();
 
  protected:
  private:

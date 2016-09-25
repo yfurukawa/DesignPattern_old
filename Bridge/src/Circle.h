@@ -6,13 +6,15 @@
 
 #ifndef CIRCLE_H_
 #define CIRCLE_H_
+#include "Shape.h"
 
-class Circle {
+class Circle : public Shape {
  public:
   //! Constractor
   Circle();
   //! Destructor
   virtual ~Circle();
+  virtual void draw();
 
  protected:
  private:
