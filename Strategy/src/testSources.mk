@@ -1,0 +1,1 @@
+TEST_SRC = ../test/testMain.cpp ../test/StrategyClientTest.cpp ../test/CleaningTest.cpp ../test/ICleaningTest.cpp ../test/ClothCleaningTest.cpp ../test/FlapCleaningTest.cpp ../test/WaxCleaningTest.cpp 
