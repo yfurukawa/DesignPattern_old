@@ -12,8 +12,13 @@ class ICleaning {
   //! Constractor
   ICleaning();
   //! Destructor
-  virtual ~ICleaning();
-
+  virtual ~ICleaning() = 0;
+  virtual void ShowCleaningMethod() = 0;
+  virtual void Start() = 0;
+  virtual void PreWork() = 0;
+  virtual void DoWork() = 0;
+  virtual void PostWork() = 0;
+  virtual void Ending() = 0;
  protected:
  private:
 };

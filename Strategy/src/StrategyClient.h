@@ -7,6 +7,8 @@
 #ifndef STRATEGYCLIENT_H_
 #define STRATEGYCLIENT_H_
 
+class Cleaning;
+
 class StrategyClient {
  public:
   //! Constractor
@@ -17,6 +19,7 @@ class StrategyClient {
 
  protected:
  private:
+  Cleaning* cleaner_;
 };
 
 #endif  // STRATEGYCLIENT_H_
