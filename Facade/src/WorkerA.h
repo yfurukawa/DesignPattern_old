@@ -13,6 +13,7 @@ class WorkerA {
   WorkerA();
   //! Destructor
   virtual ~WorkerA();
+  void calculateFunction();
 
  protected:
  private:

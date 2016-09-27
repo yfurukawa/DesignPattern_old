@@ -13,6 +13,7 @@ class WorkerC {
   WorkerC();
   //! Destructor
   virtual ~WorkerC();
+  void communicateFunction();
 
  protected:
  private:
