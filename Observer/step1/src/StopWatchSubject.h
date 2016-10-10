@@ -8,6 +8,7 @@
 #define STOPWATCHSUBJECT_H_
 
 #include <list>
+#include "StopWatchArgs.h"
 
 class IStopWatchObserver;
 
@@ -20,8 +21,9 @@ class StopWatchSubject {
   virtual void attachObserver(IStopWatchObserver* observer);
   virtual void detachObserver(IStopWatchObserver* observer);
  protected:
-  std::list<IStopWatchObserver*> observers;
+  void notifyObserver(StopWatchArgs args);
  private:
+  std::list<IStopWatchObserver*> observers;
 };
 
 #endif  // STOPWATCHSUBJECT_H_
