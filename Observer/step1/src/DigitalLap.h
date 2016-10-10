@@ -7,12 +7,17 @@
 #ifndef DIGITALLAP_H_
 #define DIGITALLAP_H_
 
-class DigitalLap {
+#include "IStopWatchObserver.h"
+
+class StopWatchArgs;
+
+class DigitalLap : public IStopWatchObserver {
  public:
   //! Constractor
   DigitalLap();
   //! Destructor
   virtual ~DigitalLap();
+  virtual void lapTimer(StopWatchArgs currentTime);
 
  protected:
  private:

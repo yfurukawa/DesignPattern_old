@@ -1,1 +1,1 @@
-TEST_SRC = ../test/testMain.cpp ../test/StopWatchFormTest.cpp ../test/IStopWatchObserverTest.cpp ../test/GaugeLapTest.cpp ../test/DigitalLapTest.cpp 
+TEST_SRC = ../test/testMain.cpp ../test/StopWatchFormTest.cpp ../test/IStopWatchObserverTest.cpp ../test/GaugeLapTest.cpp ../test/DigitalLapTest.cpp  ../test/StopWatchArgsTest.cpp  ../test/StopWatchSubjectTest.cpp 

@@ -1,1 +1,1 @@
-OBJ = StopWatchForm.o IStopWatchObserver.o GaugeLap.o DigitalLap.o 
+OBJ = StopWatchForm.o IStopWatchObserver.o GaugeLap.o DigitalLap.o  StopWatchArgs.o  StopWatchSubject.o 

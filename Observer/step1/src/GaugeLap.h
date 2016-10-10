@@ -7,12 +7,17 @@
 #ifndef GAUGELAP_H_
 #define GAUGELAP_H_
 
-class GaugeLap {
+#include "IStopWatchObserver.h"
+
+class StopWatchArgs;
+
+class GaugeLap : public IStopWatchObserver {
  public:
   //! Constractor
   GaugeLap();
   //! Destructor
   virtual ~GaugeLap();
+  virtual void lapTimer(StopWatchArgs currentTime);
 
  protected:
  private:
