@@ -11,7 +11,7 @@ Singleton::Singleton() : greeting_("") {
 Singleton::~Singleton() {
 }
 
-static Singleton& Singleton::getInstance() {
+Singleton& Singleton::getInstance() {
   static Singleton own_;
   return own_;
 }
