@@ -10,14 +10,14 @@ Timeout::Timeout() {
 Timeout::~Timeout() {
 }
 
-void Timeout::open() {
+void Timeout::open(IContext* context) {
 }
 
-void Timeout::close() {
+void Timeout::close(IContext* context) {
 }
 
-void Timeout::sendData() {
+void Timeout::sendData(IContext* context) {
 }
 
-void Timeout::timeout() {
+void Timeout::timeout(IContext* context) {
 }

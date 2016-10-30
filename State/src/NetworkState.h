@@ -16,15 +16,12 @@ class NetworkState {
   //! Destructor
   virtual ~NetworkState();
 
-  virtual void open() = 0;
-  virtual void close() = 0;
-  virtual void sendData() = 0;
-  virtual void timeout() = 0;
-  void setContecxt(IContext* context) { context_ = context; }
-  void setNextState(NetworkState* state) { nextState_ = state; }
+  virtual void open(IContext* context) = 0;
+  virtual void close(IContext* context) = 0;
+  virtual void sendData(IContext* context) = 0;
+  virtual void timeout(IContext* context) = 0;
+
  protected:
-  IContext* context_;
-  NetworkState* nextState_;
  private:
 };
 

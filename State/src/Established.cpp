@@ -4,6 +4,7 @@
 */
 #include <iostream>
 #include "./Established.h"
+#include "Initial.h"
 
 Established::Established() {
 }
@@ -11,18 +12,18 @@ Established::Established() {
 Established::~Established() {
 }
 
-void Established::open() {
+void Established::open(IContext* context) {
 	std::cout << "Network was opend. Do not need to open again." << std::endl;
 }
 
-void Established::close() {
+void Established::close(IContext* context) {
 	std::cout << "Network was closed." << std::endl;
-	context_->updateState(nextState_);
+	context->updateState(new Initial());
 }
 
-void Established::sendData() {
+void Established::sendData(IContext* context) {
 	std::cout << "Send some data." << std::endl;
 }
 
-void Established::timeout() {
+void Established::timeout(IContext* context) {
 }

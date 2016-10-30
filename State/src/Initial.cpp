@@ -7,26 +7,23 @@
 #include "Established.h"
 
 Initial::Initial() {
-	nextState_ = new Established();
-	nextState_ = this;
 }
 
 Initial::~Initial() {
-	delete nextState_;
 }
 
-void Initial::open() {
+void Initial::open(IContext* context) {
 	std::cout << "Initialized. Network is opened." << std::endl;
-	context_->updateState(nextState_);
+	context->updateState(new Established());
 }
 
-void Initial::close() {
+void Initial::close(IContext* context) {
 	std::cout << "Do not need to close due to network is not opened." << std::endl;
 }
 
-void Initial::sendData() {
+void Initial::sendData(IContext* context) {
 	std::cout << "Can not send any data due to network is not opened." << std::endl;
 }
 
-void Initial::timeout() {
+void Initial::timeout(IContext* context) {
 }

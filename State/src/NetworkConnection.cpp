@@ -9,28 +9,30 @@
 
 NetworkConnection::NetworkConnection() : state_(NULL){
 	state_ = new Initial();
-	state_->setContecxt(this);
 }
 
 NetworkConnection::~NetworkConnection() {
 }
 
 void NetworkConnection::updateState(NetworkState* state) {
+	if(state_ != NULL) {
+		delete state_;
+	}
 	state_ = state;
 }
 
 void NetworkConnection::open() {
-	state_->open();
+	state_->open(this);
 }
 
 void NetworkConnection::close() {
-	state_->close();
+	state_->close(this);
 }
 
 void NetworkConnection::sendData() {
-	state_->sendData();
+	state_->sendData(this);
 }
 
 void NetworkConnection::timeout() {
-	state_->timeout();
+	state_->timeout(this);
 }

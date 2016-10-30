@@ -16,10 +16,10 @@ class Timeout : public NetworkState {
   //! Destructor
   virtual ~Timeout();
 
-  virtual void open();
-  virtual void close();
-  virtual void sendData();
-  virtual void timeout();
+  virtual void open(IContext* context);
+  virtual void close(IContext* context);
+  virtual void sendData(IContext* context);
+  virtual void timeout(IContext* context);
 
  protected:
  private:
