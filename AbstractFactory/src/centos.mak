@@ -1,11 +1,11 @@
 CC = g++
-INCLUDE = -I /usr/incude
+INCLUDE = -I /usr/include
 LIB = -L /usr/lib
-OPT = -O0 -g3 -pg -fprofile-arcs -ftest-coverage -Wall -fmessage-length=0
+OPT = -O0 -g3 -Wall -fmessage-length=0
 
 TARGET = confirmFactory
 
-SRC = main.cpp Conductor.cpp DriverFactory.cpp DriverFactoryCentOS.cpp \
+SRC = main.cpp Conductor.cpp DriverFactoryCentOS.cpp \
 LEDDriver.cpp LEDDriverCentOS.cpp 
 
 all: $(SRC)

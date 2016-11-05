@@ -15,7 +15,6 @@ BridgeClient::BridgeClient() : shape(NULL){
 }
 
 BridgeClient::~BridgeClient() {
-	Shape* tmp;
 	for(std::list<Shape*>::iterator itr = shape.begin(); itr != shape.end(); ++itr) {
 		delete *itr;
 	}

@@ -10,13 +10,12 @@
 
 #include "LEDDriver.h"
 
-class DriverFactory;
 class LEDDriver;
 
 class DriverFactory {
 public:
-	inline virtual ~DriverFactory() {
-	}
+	DriverFactory(){}
+	virtual ~DriverFactory() {}
 	static DriverFactory* getInstance();
 	virtual LEDDriver* createLEDDriver() const = 0;
 	virtual void displayName() const = 0;

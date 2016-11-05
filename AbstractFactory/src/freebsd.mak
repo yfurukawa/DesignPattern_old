@@ -1,11 +1,11 @@
 CC = g++
-INCLUDE = -I /usr/incude
+INCLUDE = -I /usr/include
 LIB = -L /usr/lib
 OPT = -O0 -g3 -Wall -fmessage-length=0
 
 TARGET = confirmFactoryFreeBSD
 
-SRC = main.cpp Conductor.cpp DriverFactory.cpp DriverFactoryFreeBSD.cpp \
+SRC = main.cpp Conductor.cpp DriverFactoryFreeBSD.cpp \
 LEDDriver.cpp LEDDriverFreeBSD.cpp 
 
 all: $(SRC)
